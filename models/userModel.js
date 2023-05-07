@@ -77,16 +77,6 @@ userSchema.pre(/^find/, function (next) {
   next();
 });
 
-//ERROR CHHE
-// userSchema.methods.correctPassword = async function (
-//   candidatePassword,
-//   userPassword
-// ) {
-//   const xnjvdnvjf = await bcrypt.compare(candidatePassword, userPassword);
-//   console.log(xnjvdnvjf);
-//   return xnjvdnvjf;
-// };
-
 userSchema.methods.correctPassword = async function (
   candidatePassword,
   userPassword
